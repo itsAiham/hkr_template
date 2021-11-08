@@ -1,0 +1,147 @@
+\documentclass{article}  
+
+
+% Generate paper and dimensions:
+
+% change font size
+\usepackage{graphicx}           % to import images 
+\graphicspath{ {images/} }      % to declare the folder path
+% \usepackage[left=1cm,top= 10cm,botton=3cm]{artical}
+
+
+\usepackage[utf8]{inputenc}         % do not know why yet
+\usepackage[english]{babel}
+
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+
+
+
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=17mm,
+ top=20mm,
+ }
+
+\begin{document}
+	
+	\begin{figure}[h!]
+	   \minipage{0.76\textwidth}
+
+			\includegraphics[width=7cm]{images/hkr.png}
+			\label{title}
+	   \endminipage
+	   \minipage{0.32\textwidth}
+		\endminipage
+	\end{figure}
+	
+	\vspace{0.8cm}
+	\Large
+
+	\textbf{\\
+	Bachelor’s in software development\\
+	Faculty of Computer Science\\
+	DA256D HT21 Algorithms and Data Structures}
+	\begin{center}
+	\vspace{3cm}
+	\Huge
+	
+	TOPIC HERE
+	
+	\vspace{2cm}
+	\LARGE
+	YOUR NAME
+	
+	\vspace{0.4cm}	
+	\large
+	\textbf{YOUR MAIL}		\vspace{0.9cm}	
+
+    \textbf{DATE}
+	\end{center}
+	
+\thispagestyle{empty}       % no numeric for this page
+
+\newpage
+	
+
+
+
+
+
+\tableofcontents
+\large
+
+\thispagestyle{empty}        % no numeric for this page
+
+
+\newpage 
+
+\section*{Abstract}
+
+
+\newpage
+\section{Introduction}
+\vspace{1cm}
+\subsection{Purpose}
+
+\subsection{Background}
+
+
+
+\tableofcontents
+\large
+
+\thispagestyle{empty} 
+
+
+\newpage 
+
+\section*{Abstract}
+\newpage
+
+
+
+
+\section{Introduction}
+\vspace{1cm}
+
+
+\subsection{Purpose}
+\subsection{Background}
+\section{Method}
+
+\vspace{2cm}
+
+
+\section{Results}
+\newpage
+
+
+\section{Discussion}
+
+\vspace{0.6cm}
+
+
+
+\section{Summary}
+
+
+\newpage
+
+
+\section{References}
+\vspace{0.4cm}
+\printbibliography[heading=none] % to hide showing references again
+
+\end{document}
