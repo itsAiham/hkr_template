@@ -34,6 +34,38 @@
  top=20mm,
  }
 
+
+
+
+\usepackage{listings}       % for sharing code snippets
+\usepackage{xcolor}         % for coloring code
+
+% the following is to customize code-colors
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{200.58,0,200.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{main_method}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=8,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4
+}
+
+
 \begin{document}
 	
 	\begin{figure}[h!]
@@ -52,7 +84,7 @@
 	\textbf{\\
 	Bachelor’s in software development\\
 	Faculty of Computer Science\\
-	DA256D HT21 Algorithms and Data Structures}
+	DA256D HT22 Course Name}
 	\begin{center}
 	\vspace{3cm}
 	\Huge
@@ -131,7 +163,15 @@
 \section{Discussion}
 
 \vspace{0.6cm}
+An example of reference \cite{example}\\ %match the name!
+\vspace{5cm}
 
+An example of adding code snippet:
+\vspace{0.6cm}
+
+\lstset{style=main_method}  % the style="name" must match the specified customs
+\lstinputlisting[language=java]{code/example.java}
+\lstinputlisting[language=java]{code/example.py}
 
 
 \section{Summary}
