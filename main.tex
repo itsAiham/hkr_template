@@ -32,7 +32,10 @@
  top=20mm,
  }
 
-
+\usepackage{svg}
+\usepackage{xcolor}
+\definecolor{HKR}{RGB}{00, 170, 50}
+ 
 
 
 \usepackage{listings}       % for sharing code snippets
@@ -67,12 +70,14 @@
 \begin{document}
 	
 	\begin{figure}[h!]
-	   \minipage{0.76\textwidth}
-
-			\includegraphics[width=7cm]{images/hkr.png}
-			\label{title}
-	   \endminipage
-	   \minipage{0.32\textwidth}
+		\minipage{0.50\textwidth}
+			\includesvg{HKR.svg}\\
+			\small
+			Kristianstad University\\
+			SE-291 88 Kristianstad\\
+			Sweden\\
+			\href{tel:+46 44 20 30 00}{\color{black}{+46 44 20 30 00}}\\
+			\textbf{\href{www.hkr.se}{\color{HKR}{www.hkr.se}{}}}
 		\endminipage
 	\end{figure}
 	
